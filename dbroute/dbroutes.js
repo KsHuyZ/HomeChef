@@ -1,15 +1,15 @@
 const { Router } = require("express");
 const router = Router();
 const dishcontroller = require("../controllers/DistCtrl");
-const usercontroller = require("../controllers/UserCtrl");
-const menucontroller = require("../controllers/MenuCtrl");
-const cmtcontroller = require("../controllers/CommentCtrl")
+const usercontroller = require("../controllers/userCtrl");
+const menucontroller = require("../controllers/menuCtrl");
+const cmtcontroller = require("../controllers/CommentCtrl");
 
 //routes for handling dish API
 
 router.get("/dish", dishcontroller.getDish);
 router.get("/dish/:id", dishcontroller.getDishbyId);
-router.get("/dish/meal/:meal",dishcontroller.getDIshbyMeal)
+router.get("/dish/meal/:meal", dishcontroller.getDIshbyMeal);
 router.get("/dish/keyword/:keyword", dishcontroller.getDishAtKey);
 router.post("/dish", dishcontroller.createDish);
 router.put("/dish", dishcontroller.updateDish);
@@ -21,7 +21,7 @@ router.get("/users", usercontroller.getUsers);
 router.post("/users", usercontroller.createUser);
 router.put("/users", usercontroller.updateUser);
 router.delete("/users", usercontroller.deleteUser);
-router.post("/login",usercontroller.login)
+router.post("/login", usercontroller.login);
 
 //routes for handling menu API
 
@@ -32,7 +32,6 @@ router.put("/menu", menucontroller.updateMenu);
 router.delete("/menu", menucontroller.deleteMenu);
 
 //routes for handling menu API
-
 
 router.get("/cmt/:id", cmtcontroller.getCommentbyDishId);
 router.post("/cmt", cmtcontroller.writeComment);
