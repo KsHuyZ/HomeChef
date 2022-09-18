@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 app.use(cors());
 const port = process.env.Port;
-const DB_URL = process.env.DB;
+const DB_URL = "mongodb+srv://kshuyz0055:kshuyz0055@cluster0.vnwhw.mongodb.net/Dist?retryWrites=true&w=majority";
 app.use(bodyParser.json());
 app.use(
   bodyParser.urlencoded({
