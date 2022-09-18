@@ -20,7 +20,7 @@
     "nodemon": "^2.0.19"
   },
   "scripts": {
-    "start": "nodemon server"
+    "dev": "nodemon server"
   },
   "eslintConfig": {
     "extends": [
