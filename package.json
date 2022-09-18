@@ -4,6 +4,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+
+  "scripts": {
+    "start": "nodemon server"
+  },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -17,9 +22,7 @@
     "nodemon": "^2.0.19"
   },
 
-  "scripts": {
-    "start": "nodemon server"
-  },
+
 
   "eslintConfig": {
     "extends": [

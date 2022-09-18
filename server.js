@@ -31,5 +31,7 @@ mongoose
   });
 
 app.listen(process.env.Port || 3000, () => {
-  console.log(`App running on port ${port}.`);
+  console.log(`App running on port ${port}.
+  ${window.location.href}
+  `);
 });
